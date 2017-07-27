@@ -19,7 +19,10 @@ ch.search=function(inputEle, fromEle, exactEle) {
 		$(fromEle).show();
 	});
 };
-ch.editor=(function(){
+ch.store=(function(){
+	
+})();
+ch.init=(function(){
 	$('html').on('click','[data-action]',function(_z){
 	    _z.preventDefault();
 	    var t=$(this),d=t.attr('data-action'),j=$.parseJSON(d);
