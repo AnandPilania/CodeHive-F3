@@ -1,0 +1,20 @@
+.bar.editor{position:absolute;left:0px;right:0px;top:0px;bottom:0px;}
+.dark .bar.editor{background-color:#333333;color:#959798;}
+.light .bar.editor{background-color:#fefefe;color:#333333;}
+[data-editorBar="shown"] .bar.editor{display:block;}
+[data-editorBar="shown"] .bar.default{display:none;}
+.bar.editor .bar.upper{height:50px;}
+.bar.editor .bar.lower{top:50px;}
+
+.bar.editor .titles{}
+.dark .bar.editor .controls{border-top:1px solid #1d1d1d;border-bottom:1px solid #1d1d1d;}
+.light .bar.editor .controls{border-top:1px solid #aaaaaa;border-bottom:1px solid #aaaaaa;}
+
+#editorarea textarea{width:100%;height:100%;border:none;overflow-x: hidden;overflow-y:auto;resize:none;background:transparent;display:none;}
+#editorarea textarea.active{display:block;}
+
+.bottom .lower .upper .search{float:left;white-space:nowrap;}
+.bottom .lower .upper .search input{width:100%;height:26px;line-height:26px;border:none;background:transparent;color:#eee;padding:0 6px;}
+.bottom .lower .upper .editorsearchcontrol{float:right;width:219px;}
+.bottom .lower .upper .editorsearchcontrol li{float:left;width:25px;line-height:25px;text-align:center;border-left:1px solid #1d1d1d;cursor:pointer;}
+.bottom .lower .upper .editorsearchcontrol li.matches{width:94px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}

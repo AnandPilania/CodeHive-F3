@@ -1,0 +1,346 @@
+<asset src="assets/editor/css/topBar.css" priority="1" type="css" />
+<asset src="assets/editor/js/topBar.js" priority="1" type="js" />
+
+<ul id="topBar" class="bar top vline tmenu">
+	<li class="logo">A</li>
+	<li><div><span>File</span></div>
+	   	<ul class="smenu">
+	  		<li><div><span>New</span><i class="fa fa-caret-right"></i></div>
+	    		<ul class="ssmenu">
+		  			<li><div><span>File</span></div></li>
+		  			<li><div><span>Folder</span></div></li>
+				</ul>
+	  		</li>
+	  		<li><div><span>Open</span></div></li>
+	  		<li><div><span>Save</span></div></li>
+	  		<li><div><span>Save As</span></div></li>
+	  		<li><div><span>Clone</span></div></li>
+	  		<li><div><span>Rename</span></div></li>
+	  		<li><div><span>Permission</span></div></li>
+	  		<li><div><span>Delete</span></div></li>
+	  		<li><div><span>Close</span></div></li>
+	  		<li><div><span>Close All</span></div></li>
+		</ul>
+	</li>
+	 	<li><div><span>Edit</span></div>
+	   	<ul class="smenu">
+	  		<li><div><span>Undo</span></div></li>
+	  		<li><div><span>Redo</span></div></li>
+	  		<li><div><span>Cut</span></div></li>
+	  		<li><div><span>Copy</span></div></li>
+	  		<li><div><span>Paste</span></div></li>
+	  		<li><div><span>Show Completions</span><i class="fa fa-times"></i></div></li>
+	  		<li><div><span>Enable Emmet</span><i class="fa fa-times"></i></div></li>
+	  		<li><div><span>Indent With Tabs</span><i class="fa fa-times"></i></div></li>
+	  		<li><div><span>Auto Indent</span><i class="fa fa-times"></i></div></li>
+	  		<li><div><span>Line</span><i class="fa fa-caret-right"></i></div>
+	    		<ul class="ssmenu">
+		  			<li><div><span>Indent</span></div></li>
+		  			<li><div><span>Unindent</span></div></li>
+		  			<li><div><span>Swap Line Up</span></div></li>
+		  			<li><div><span>Swap Line Down</span></div></li>
+		  			<li><div><span>Duplicate Line</span></div></li>
+		  			<li><div><span>Delete Line</span></div></li>
+				</ul>
+	  		</li>
+	  		<li><div><span>Comment</span><i class="fa fa-caret-right"></i></div>
+	    		<ul class="ssmenu">
+		  			<li><div><span>Comment Block</span></div></li>
+		  			<li><div><span>UnComment Block</span></div></li>
+				</ul>
+	  		</li>
+	  		<li><div><span>Code Folding</span><i class="fa fa-caret-right"></i></div>
+	    		<ul class="ssmenu">
+		  			<li><div><span>Fold</span></div></li>
+		  			<li><div><span>Fold All</span></div></li>
+		  			<li><div><span>Unfold</span></div></li>
+		  			<li><div><span>Unfold All</span></div></li>
+				</ul>
+	  		</li>
+	  		<li><div><span>Convert Case</span><i class="fa fa-caret-right"></i></div>
+	    		<ul class="ssmenu">
+		  			<li><div><span>To Lower Case</span></div></li>
+		  			<li><div><span>To Upper Case</span></div></li>
+				</ul>
+	  		</li>
+	  		<li><div><span>Wrap Lines</span></div></li>
+		</ul>
+	</li>
+	<li><div><span>Find</span></div>
+	   	<ul class="smenu">
+		  	<li><div><span>Find</span></div></li>
+		  	<li><div><span>Find Next</span></div></li>
+		  	<li><div><span>Find Previous</span></div></li>
+		  	<li><div><span>Replace</span></div></li>
+		  	<li><div><span>Replace Next</span></div></li>
+		  	<li><div><span>Replace All</span></div></li>
+		</ul>
+	</li>
+	<li><div><span>View</span></div>
+	    <ul class="smenu">
+		  	<li><div><span>Layout</span><i class="fa fa-caret-right"></i></div>
+		    	<ul class="ssmenu">
+			  		<li class="selected"><div><span>Single</span><i class="fa fa-check"></i></div></li>
+			  		<li><div><span>Split Vertical</span></div></li>
+			  		<li><div><span>Split Horizontal</span></div></li>
+			  		<li><div><span>Grid</span></div></li>
+			  		<li><div><span>Column: 3</span></div></li>
+			  		<li><div><span>Columns: 2 Top, 1 Bottom</span></div></li>
+			  		<li><div><span>Columns: 3 Top, 1 Bottom</span></div></li>
+				</ul>
+		  	</li>
+		  	<li class="selected"><div><span>File Explorer</span><i class="fa fa-check"></i></div></li>
+		  	<li><div><span>Show Errors on Warnings</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Show Line Numbers</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Show Fold Icons</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Show File Revisions</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Show File Shares</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Show SSH Console Panel</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Show Checkboxes</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Show Scrollbars</span><i class="fa fa-times"></i></div></li>
+		</ul>
+	</li>
+	<li><div><span>Preferences</span></div>
+	    <ul class="smenu">
+		  	<li><div><span>Font Family</span><i class="fa fa-caret-right"></i></div>
+		    	<ul class="ssmenu">
+			  		<li><div><span>Anonymous Pro</span></div></li>
+			  		<li class="selected"><div><span>Consolas</span><i class="fa fa-check"></i></div></li>
+			  		<li><div><span>Cousine</span></div></li>
+			  		<li><div><span>Droid Sans Mono</span></div></li>
+			  		<li><div><span>Inconsolata</span></div></li>
+			  		<li><div><span>Raleway</span></div></li>
+			  		<li><div><span>PT Mono</span></div></li>
+			  		<li><div><span>Source Code Pro</span></div></li>
+			  		<li><div><span>Share Tech Mono</span></div></li>
+			  		<li><div><span>Ubuntu Mono</span></div></li>
+				</ul>
+		  	</li>
+		  	<li><div><span>Font Size</span><i class="fa fa-caret-right"></i></div>
+		    	<ul class="ssmenu">
+			  		<li><div><span>Font Size: 8</span></div></li>
+					<li><div><span>Font Size: 9</span></div></li>
+					<li><div><span>Font Size: 10</span></div></li>
+					<li class="selected"><div><span>Font Size: 11</span><i class="fa fa-check"></i></div></li>
+					<li><div><span>Font Size: 12</span></div></li>
+					<li><div><span>Font Size: 14</span></div></li>
+					<li><div><span>Font Size: 16</span></div></li>
+					<li><div><span>Font Size: 18</span></div></li>
+					<li><div><span>Font Size: 20</span></div></li>
+					<li><div><span>Font Size: 24</span></div></li>
+					<li><div><span>Font Size: 28</span></div></li>
+					<li><div><span>Font Size: 36</span></div></li>
+				</ul>
+		  	</li>
+		  	<li><div><span>Line Height</span><i class="fa fa-caret-right"></i></div>
+		    	<ul class="ssmenu">
+					<li class="selected"><div><span>Line Height: 90%</span><i class="fa fa-check"></i></div></li>
+					<li><div><span>Line Height: 100%</span></div></li>
+					<li><div><span>Line Height: 110%</span></div></li>
+					<li><div><span>Line Height: 120%</span></div></li>
+					<li><div><span>Line Height: 130%</span></div></li>
+					<li><div><span>Line Height: 140%</span></div></li>
+					<li><div><span>Line Height: 150%</span></div></li>
+				</ul>
+		  	</li>
+		  	<li><div><span>Tab Size</span><i class="fa fa-caret-right"></i></div>
+		    	<ul class="ssmenu">
+					<li><div><span>Tab Size: 1</span></div></li>
+					<li class="selected"><div><span>Tab Size: 2</span><i class="fa fa-check"></i></div></li>
+					<li><div><span>Tab Size: 3</span></div></li>
+					<li><div><span>Tab Size: 4</span></div></li>
+					<li><div><span>Tab Size: 5</span></div></li>
+					<li><div><span>Tab Size: 6</span></div></li>
+					<li><div><span>Tab Size: 7</span></div></li>
+					<li><div><span>Tab Size: 8</span></div></li>
+				</ul>
+		  	</li>
+		  	<li><div><span>Default Encoding</span><i class="fa fa-caret-right"></i></div>
+		    	<ul class="ssmenu extra" id="defaultencoding">
+					<li><div><span data-encoding="ASCII">ASCII</span></div></li>
+		            <li><div><span data-encoding="Big5">Big5</span></div></li>
+		            <li><div><span data-encoding="EUC-KR">EUC-KR</span></div></li>
+		            <li><div><span data-encoding="GB2312">GB2312</span></div></li>
+		            <li><div><span data-encoding="KOI8-R">KOI8-R</span></div></li>
+		            <li><div><span data-encoding="CP1256">CP1256</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-1">ISO-8859-1</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-2">ISO-8859-2</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-3">ISO-8859-3</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-4">ISO-8859-4</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-5">ISO-8859-5</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-6">ISO-8859-6</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-7">ISO-8859-7</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-8">ISO-8859-8</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-9">ISO-8859-9</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-13">ISO-8859-13</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-14">ISO-8859-14</span></div></li>
+		            <li><div><span data-encoding="ISO-8859-15">ISO-8859-15</span></div></li>
+		            <li><div><span data-encoding="JIS">JIS</span></div></li>
+		            <li><div><span data-encoding="Windows-1250">Windows-1250</span></div></li>
+		            <li><div><span data-encoding="Windows-1251">Windows-1251</span></div></li>
+		            <li><div><span data-encoding="Windows-1252">Windows-1252</span></div></li>
+		            <li><div><span data-encoding="Windows-1253">Windows-1253</span></div></li>
+		            <li><div><span data-encoding="Windows-1254">Windows-1254</span></div></li>
+		            <li><div><span data-encoding="Windows-1255">Windows-1255</span></div></li>
+		            <li><div><span data-encoding="Windows-1256">Windows-1256</span></div></li>
+		            <li><div><span data-encoding="Windows-1257">Windows-1257</span></div></li>
+		            <li><div><span data-encoding="Windows-1258">Windows-1258</span></div></li>
+		            <li><div><span data-encoding="UTF-7">UTF-7</span></div></li>
+		            <li class="selected"><div><span data-encoding="UTF-8">UTF-8</span><i class="fa fa-check"></i></div></li>
+		            <li><div><span data-encoding="UTF-16">UTF-16</span></div></li>
+		            <li><div><span data-encoding="UTF-32">UTF-32</span></div></li>
+				</ul>
+		  	</li>
+		  	<li><div><span>Default Mode</span><i class="fa fa-caret-right"></i></div>
+		    	<ul class="ssmenu extra" id="defaultmode">
+					<li><div><span data-mode="text/apl">APL</span></div></li>
+					<li><div><span data-mode="application/x-aspx">ASP.NET</span></div></li>
+					<li><div><span data-mode="text/x-asterisk">Asterisk</span></div></li>
+					<li><div><span data-mode="text/x-csrc">C</span></div></li>
+					<li><div><span data-mode="text/x-csharp">C#</span></div></li>
+					<li><div><span data-mode="text/x-c++src">C++</span></div></li>
+					<li><div><span data-mode="text/x-cmake">CMake</span></div></li>
+					<li><div><span data-mode="text/x-cassandra">CQL</span></div></li>
+					<li><div><span data-mode="text/css">CSS</span></div></li>
+					<li><div><span data-mode="text/x-clojure">Clojure</span></div></li>
+					<li><div><span data-mode="text/x-cobol">Cobol</span></div></li>
+					<li><div><span data-mode="text/x-coffeescript">CoffeeScript</span></div></li>
+					<li><div><span data-mode="text/x-common-lisp">Common Lisp</span></div></li>
+					<li><div><span data-mode="application/x-cypher-query">Cypher</span></div></li>
+					<li><div><span data-mode="text/x-cython">Cython</span></div></li>
+					<li><div><span data-mode="text/x-d">D</span></div></li>
+					<li><div><span data-mode="application/xml-dtd">DTD</span></div></li>
+					<li><div><span data-mode="application/dart">Dart</span></div></li>
+					<li><div><span data-mode="text/x-django">Django</span></div></li>
+					<li><div><span data-mode="text/x-dockerfile">Dockerfile</span></div></li>
+					<li><div><span data-mode="text/x-dylan">Dylan</span></div></li>
+					<li><div><span data-mode="text/x-ebnf">EBNF</span></div></li>
+					<li><div><span data-mode="text/x-ecl">ECL</span></div></li>
+					<li><div><span data-mode="text/x-eiffel">Eiffel</span></div></li>
+					<li><div><span data-mode="application/x-ejs">Embedded Javascript</span></div></li>
+					<li><div><span data-mode="application/x-erb">Embedded Ruby</span></div></li>
+					<li><div><span data-mode="text/x-erlang">Erlang</span></div></li>
+					<li><div><span data-mode="text/x-fsharp">F#</span></div></li>
+					<li><div><span data-mode="text/x-forth">Forth</span></div></li>
+					<li><div><span data-mode="text/x-fortran">Fortran</span></div></li>
+					<li><div><span data-mode="text/x-gas">Gas</span></div></li>
+					<li><div><span data-mode="text/x-feature">Gherkin</span></div></li>
+					<li><div><span data-mode="text/x-gfm">GitHub Flavored Markdown</span></div></li>
+					<li><div><span data-mode="text/x-go">Go</span></div></li>
+					<li><div><span data-mode="text/x-groovy">Groovy</span></div></li>
+					<li><div><span data-mode="text/x-haml">HAML</span></div></li>
+					<li><div><span data-mode="text/html">HTML</span></div></li>
+					<li><div><span data-mode="message/http">HTTP</span></div></li>
+					<li><div><span data-mode="text/x-hxml">HXML</span></div></li>
+					<li><div><span data-mode="text/x-haskell">Haskell</span></div></li>
+					<li><div><span data-mode="text/x-haxe">Haxe</span></div></li>
+					<li><div><span data-mode="text/x-idl">IDL</span></div></li>
+					<li><div><span data-mode="application/json">JSON</span></div></li>
+					<li><div><span data-mode="application/ld+json">JSON-LD</span></div></li>
+					<li><div><span data-mode="text/x-jade">Jade</span></div></li>
+					<li><div><span data-mode="text/x-java">Java</span></div></li>
+					<li><div><span data-mode="application/x-jsp">Java Server Pages</span></div></li>
+					<li><div><span data-mode="text/javascript">JavaScript</span></div></li>
+					<li><div><span data-mode="null">Jinja2</span></div></li>
+					<li><div><span data-mode="text/x-julia">Julia</span></div></li>
+					<li><div><span data-mode="text/x-kotlin">Kotlin</span></div></li>
+					<li><div><span data-mode="text/x-less">LESS</span></div></li>
+					<li><div><span data-mode="text/x-latex">LaTeX</span></div></li>
+					<li><div><span data-mode="text/x-livescript">LiveScript</span></div></li>
+					<li><div><span data-mode="text/x-lua">Lua</span></div></li>
+					<li><div><span data-mode="text/x-mssql">MS SQL</span></div></li>
+					<li><div><span data-mode="text/x-mariadb">MariaDB</span></div></li>
+					<li><div><span data-mode="text/x-mariadb">MariaDB SQL</span></div></li>
+					<li><div><span data-mode="text/x-markdown">Markdown</span></div></li>
+					<li><div><span data-mode="text/x-modelica">Modelica</span></div></li>
+					<li><div><span data-mode="text/x-mysql">MySQL</span></div></li>
+					<li><div><span data-mode="text/n-triples">NTriples</span></div></li>
+					<li><div><span data-mode="text/x-nginx-conf">Nginx</span></div></li>
+					<li><div><span data-mode="text/x-ocaml">OCaml</span></div></li>
+					<li><div><span data-mode="text/x-objectivec">Objective C</span></div></li>
+					<li><div><span data-mode="text/x-octave">Octave</span></div></li>
+					<li><div><span data-mode="null">PEG.js</span></div></li>
+					<li><div><span data-mode="application/pgp">PGP</span></div></li>
+		            <li><div><span data-mode="application/x-httpd-php">PHP</span></div></li>
+		            <li><div><span data-mode="text/x-plsql">PLSQL</span></div></li>
+		            <li><div><span data-mode="text/x-pascal">Pascal</span></div></li>
+		            <li><div><span data-mode="text/x-perl">Perl</span></div></li>
+		            <li><div><span data-mode="text/x-pig">Pig</span></div></li>
+		            <li class="selected"><div><span data-mode="text/plain">Plain Text</span><i class="fa fa-check"></i></div></li>
+		            <li><div><span data-mode="text/x-properties">Properties files</span></div></li>
+		            <li><div><span data-mode="text/x-puppet">Puppet</span></div></li>
+		            <li><div><span data-mode="text/x-python">Python</span></div></li>
+		            <li><div><span data-mode="text/x-q">Q</span></div></li>
+		            <li><div><span data-mode="text/x-rsrc">R</span></div></li>
+		            <li><div><span data-mode="text/x-rpm-changes">RPM Changes</span></div></li>
+		            <li><div><span data-mode="text/x-rpm-spec">RPM Spec</span></div></li>
+		            <li><div><span data-mode="text/x-ruby">Ruby</span></div></li>
+		            <li><div><span data-mode="text/x-rustsrc">Rust</span></div></li>
+		            <li><div><span data-mode="text/x-scss">SCSS</span></div></li>
+		            <li><div><span data-mode="application/sparql-query">SPARQL</span></div></li>
+		            <li><div><span data-mode="text/x-sql">SQL</span></div></li>
+		            <li><div><span data-mode="text/x-sass">Sass</span></div></li>
+		            <li><div><span data-mode="text/x-scala">Scala</span></div></li>
+		            <li><div><span data-mode="text/x-scheme">Scheme</span></div></li>
+		            <li><div><span data-mode="text/x-sh">Shell</span></div></li>
+		            <li><div><span data-mode="application/sieve">Sieve</span></div></li>
+		            <li><div><span data-mode="text/x-slim">Slim</span></div></li>
+		            <li><div><span data-mode="text/x-stsrc">Smalltalk</span></div></li>
+		            <li><div><span data-mode="text/x-smarty">Smarty</span></div></li>
+		            <li><div><span data-mode="text/x-solr">Solr</span></div></li>
+		            <li><div><span data-mode="text/x-soy">Soy</span></div></li>
+		            <li><div><span data-mode="text/x-spreadsheet">Spreadsheet</span></div></li>
+		            <li><div><span data-mode="text/x-systemverilog">SystemVerilog</span></div></li>
+		            <li><div><span data-mode="text/x-toml">TOML</span></div></li>
+		            <li><div><span data-mode="text/x-tcl">Tcl</span></div></li>
+		            <li><div><span data-mode="text/x-textile">Textile</span></div></li>
+		            <li><div><span data-mode="text/x-tiddlywiki">TiddlyWiki </span></div></li>
+		            <li><div><span data-mode="text/tiki">Tiki wiki</span></div></li>
+		            <li><div><span data-mode="text/x-tornado">Tornado</span></div></li>
+		            <li><div><span data-mode="text/turtle">Turtle</span></div></li>
+		            <li><div><span data-mode="application/typescript">TypeScript</span></div></li>
+		            <li><div><span data-mode="text/x-vb">VB.NET</span></div></li>
+		            <li><div><span data-mode="text/vbscript">VBScript</span></div></li>
+		            <li><div><span data-mode="text/velocity">Velocity</span></div></li>
+              		<li><div><span data-mode="text/x-verilog">Verilog</span></div></li>
+              		<li><div><span data-mode="application/xml">XML</span></div></li>
+              		<li><div><span data-mode="application/xquery">XQuery</span></div></li>
+              		<li><div><span data-mode="text/x-yaml">YAML</span></div></li>
+              		<li><div><span data-mode="text/x-z80">Z80</span></div></li>
+              		<li><div><span data-mode="text/x-diff">diff</span></div></li>
+              		<li><div><span data-mode="text/mirc">mIRC</span></div></li>
+              		<li><div><span data-mode="text/x-rst">reStructuredText</span></div></li>
+              		<li><div><span data-mode="text/x-stex">sTeX</span></div></li>
+              		<li><div><span data-mode="troff">troff</span></div></li>
+				</ul>
+		  	</li>
+		  	<li class="selected"><div><span>Sounds</span><i class="fa fa-check"></i></div></li>
+		  	<li><div><span>Auto-Save</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Auto-Complete</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>File-Revisions</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Auto-Highlight</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Mini-Map</span><i class="fa fa-times"></i></div></li>
+		  	<li><div><span>Settings</span></div></li>
+		</ul>
+	</li>
+	<li class="noborder"><div><span>Help</span></div>
+	    <ul class="smenu">
+		  	<li class="disabled"><div><span>Quick Tour</span></div></li>
+		  	<li><div><span>Documentation</span></div></li>
+		  	<li><div><span>Send Feedback</span></div></li>
+		  	<li><div><span>Keyboard Shortcuts</span></div></li>
+		  	<li><div><span>Terms of Service</span></div></li>
+		  	<li><div><span>Privacy Policy</span></div></li>
+		  	<li><div><span>About</span></div></li>
+		</ul>
+	</li>
+	<check if="{{ @user }}">
+	<true><li class="right"><div><span>{{ @user.email }}</span></div>
+		<ul class="smenu">
+		  	<li><div><span>Setting</span></div></li>
+		  	<li><div><span>Logout</span></div></li>
+		</ul></true>
+	<false><li class="right"><div><span>Login</span></div></false>
+	</check>
+	</li>
+</ul>

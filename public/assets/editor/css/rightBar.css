@@ -1,0 +1,13 @@
+.bar.right{position:absolute;top:0px;bottom:0px;width:200px;}
+.dark .bar.right{background-color:#333333;color:#959798;border-left:1px solid #1d1d1d;}
+.light .bar.right{background-color:#fefefe;color:#333333;border-left:1px solid #aaaaaa;}
+[data-rightBar="shown"] .bar.right{display:block;}
+[data-rightBar="shown"] .bar.default,[data-rightBar="shown"] .bar.editor{right:200px;}
+
+.bar.right .bottom .upper li{height:46px;width:100%;padding:3px;border-bottom:1px solid #1d1d1d;cursor:default;}
+.bar.right li .left{float:left;width:40px;height:40px;border-radius:50%;overflow:hidden;}
+.bar.right li .left img{width:38px;height:38px;border-radius:50%;}
+.bar.right li .center{float:left;margin-left:5px;width:123px;overflow:hidden;}
+.bar.right li .center h4{height:22px;line-height:22px;font-size:14px;font-weight:bold;}
+.bar.right li .center span{height:16px;line-height:16px;font-size:10px;}
+.bar.right li .right{float:right;border-left:1px solid #1d1d1d;width:20px;height:24px;margin-top:8px;line-height:24px;font-size:14px;text-align:center;}

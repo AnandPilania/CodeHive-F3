@@ -1,0 +1,24 @@
+<asset src="assets/editor/css/fileTree.css" priority="1" type="css" />
+<asset src="assets/editor/js/fileTree.js" priority="1" type="js" />
+
+<div id="fileTree" class="fileTree">
+	<ul>
+	<repeat group="{{ @fileTree }}" key="{{ @key}}" value="{{ @value }}">
+		<li><h4>{{ @key }}</h4></li>
+	</repeat>
+	</ul>
+</div>
+
+<!-- <li class="node collapsed"><span class="leaf"><span class="fa fa-archive"></span> DevBox</span><span class="node-toggle"></span></li>
+<li class="node collapsed">
+	<span class="leaf"><span class="fa fa-archive"></span> SandBox</span>
+	<span class="node-toggle"></span>
+	<ul>
+		<li class="node collapsed"><span class="leaf">Projects</span>
+			<span class="node-toggle"></span>
+			<ul>
+				<li><span class="leaf">First</span></li>
+			</ul>
+		</li>
+	</ul>
+</li> -->

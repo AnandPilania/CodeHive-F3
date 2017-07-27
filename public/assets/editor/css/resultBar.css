@@ -1,0 +1,14 @@
+.bar.result{position:absolute;right:0px;top:0px;bottom:0px;width:300px;}
+.dark .bar.result{background-color:#333333;color:#959798;border-left:1px solid #1d1d1d;}
+.light .bar.result{background-color:#fefefe;color:#333333;border-left:1px solid #aaaaaa;}
+[data-resultBar="shown"] .bar.result{display:block;}
+[data-resultBar="shown"] .bar.default,[data-resultBar="shown"] .bar.editor{right:300px;}
+[data-resultBar="shown"] .bar.right{display:none;}
+
+.bar.result .lower .control{width:92px;float:left;}
+.bar.result .lower .control li{width:23px;height:23px;float:left;text-align:center;line-height:23px;cursor:pointer;}
+.bar.result .lower .control li span{font-size:12px;}
+.bar.result .lower .input{float:right;width:207px;border-left:1px solid #222;border-bottom:1px dashed #1d1d1d;display:none;}
+.bar.result .lower .input input{color:#777;background-color:#1d1d1d;}
+.bar.result iframe{border:none;background-color:#1d1d1d;position:absolute;height:100%;display:none;}
+.bar.result .lower .input.active, .bar.result iframe.active{display:block;}

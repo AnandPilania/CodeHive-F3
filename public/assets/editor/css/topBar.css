@@ -1,0 +1,5 @@
+.bar.top{position:fixed;left:0px;right:0px;z-index:999;}
+.dark .bar.top{background-color:#333333;color:#959798;border-bottom:1px solid #1d1d1d;}
+.light .bar.bottom{background-color:#fefefe;color:#333333;border-bottom:1px solid #aaaaaa;}
+[data-topBar="shown"] .bar.top{display:block;}
+[data-topBar="shown"] #main{top:25px;}

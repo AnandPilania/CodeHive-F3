@@ -1,0 +1,24 @@
+<asset src="assets/editor/css/leftBar.css" priority="1" type="css" />
+<asset src="assets/editor/js/leftBar.js" priority="1" type="js" />
+
+<check if="{{ @projects }}">
+<true><div id="leftBar" class="bar left" data-top-upper="shown" data-top-lower="shown" data-bottom-upper="shown" data-bottom-lower="shown"></true>
+<false><div id="leftBar" class="bar left" data-top-upper="shown" data-top-lower="shown" data-bottom-upper="shown" data-bottom-lower="hidden"></false>
+</check>
+    <div class="top">
+        <div class="upper location">
+            <div class="ellipsis">
+            </div>
+        </div>
+        <div class="lower">
+            <input type="text" class="inputsearch" id="leftbarsearch" placeholder="File Name" />
+            <div class="leftbarsearchresult" id="leftbarsearchresult">...</div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="upper">
+        	<include href="editor\fileTree.htm" />
+        </div>
+		<include if="{{ @projects }}" href="editor\projects.htm" />
+	</div>
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ @LANG }}">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<check if="{{ @title }}">
+	<true><title>{{ @SITE.TITLE }} : {{ @title }}</title></true>
+	<false><title>{{ @SITE.TITLE }}</title></false>
+	</check>
+	<base href="{{ @SCHEME.'://'.@HOST.(!@PORT||@PORT==80||@PORT==443?'':':'.@PORT).@BASE.'/' }}" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="description" content="{{ @SITE.DESCRIPTION }}">
+	<meta name="keywords" content="{{ @SITE.KEYWORDS }}">
+	<meta name="author" content="{{ @SITE.AUTHOR }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<asset src="assets/font-awesome/font-awesome.min.css" priority="10" type="css" />
+	<asset src="assets/css/reset.css" priority="10" type="css" />
+	<asset src="assets/js/jquery-3.2.1.min.js" priority="10" type="js" />
+</head>
+<include href="{{ @content }}" />
+</html>

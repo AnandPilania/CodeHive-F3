@@ -1,0 +1,1 @@
+ch.defaultBar=(function(){})();

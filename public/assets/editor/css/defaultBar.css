@@ -1,0 +1,6 @@
+.bar.default{position:absolute;left:0px;right:0px;top:0px;bottom:0px;}
+.dark .bar.default{background-color:#333333;color:#959798;}
+.light .bar.default{background-color:#fefefe;color:#333333;}
+[data-defaultBar="shown"] .bar.default{display:block;}
+[data-leftBar="shown"] .bar.default{left:200px;}
+[data-rightBar="shown"] .bar.default{right:200px;}

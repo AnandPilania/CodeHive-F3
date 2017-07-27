@@ -1,0 +1,60 @@
+<asset src="assets/editor/css/editorBar.css" priority="1" type="css" />
+<asset src="assets/editor/js/editorBar.js" priority="1" type="js" />
+
+<div id="editorBar" class="bar editor" data-top-upper="shown" data-top-lower="shown" data-bottom-upper="shown" data-bottom-lower="hidden">
+    <div class="top">
+        <ul class="upper">
+            <li class="editorurl active" data-id="1445249881464" title="http://localhost/index1.html" data-encoding="UTF-7" data-mode="text/palin"><h4>index1.html</h4><span class="close fa fa-close"></span></li>
+			<li class="editorurl" data-id="1445249881465" title="http://localhost/index2.html" data-encoding="UTF-8" data-mode="application/dart"><h4>index2.html</h4><span class="close fa fa-close"></span></li>
+			<li class="editorurl" data-id="1445249881466" title="http://localhost/anutiger/index3.html" data-encoding="UTF-8" data-mode="application/dart"><h4>index3.html</h4><span class="close fa fa-close"></span></li>
+        </ul>
+        <ul data-id="toolbar" class="lower">
+            <li data-id="newfile" title="New File"><span class="fa fa-file"></span></li>
+            <li data-id="openfile" title="Open File"><span class="fa fa-folder"></span></li>
+            <li data-id="save" title="Save"><span class="fa fa-save"></span></li>
+            <li data-id="saveas" title="Save As"><span class="fa fa-save"><span class="fa fa-save"></span></span></li>
+            <li class="divider"></li>
+            <li data-id="ssh" title="SSH"><span class="fa fa-code"></span></li>
+            <li data-id="browse" title="Browse"><span class="fa fa-external-link"></span></li>
+            <li class="divider"></li>
+            <li data-id="undo" title="Undo"><span class="fa fa-undo"></span></li>
+            <li data-id="redo" title="Redo"><span class="fa fa-rotate-right"></span></li>
+            <li data-id="reload" title="Reload"><span class="fa fa-refresh"></span></li>
+            <li class="divider"></li>
+            <li data-id="find" title="Find"><span class="fa fa-search"></span></li>
+            <li data-id="replace" title="Replace"><span>R</span></li>
+            <li data-id="gotoline" title="Goto line"><span>G</span></li>
+            <li class="divider"></li>
+            <li data-id="indentleft" title="Indent Left"><span class="fa fa-indent"></span></li>
+            <li data-id="indentright" title="Indent Right"><span class="fa fa-outdent"></span></li>
+            <li data-id="beautify" title="Beautify"><span class="fa fa-magic"></span></li>
+            <li class="divider"></li>
+            <li data-id="share" title="Share"><span class="fa fa-share-alt"></span></li>
+            <li data-id="checkin" title="Checkin"><span class="fa fa-sign-in"></span></li>
+            <li data-id="checkout" title="Checkout"><span class="fa fa-sign-out"></span></li>
+            <li data-id="revisions" title="Revisions"><span class="fa fa-clock-o"></span></li>
+        </ul>
+    </div>
+    <div class="bottom" data-lower-upper="shown" data-lower-lower="shown">
+        <div class="upper" id="editorarea">
+            <textarea data-id="1445249881464" class="active">index1</textarea>
+			<textarea data-id="1445249881465">index2</textarea>
+        </div>
+        <div class="lower">
+            <div class="upper" id="editorsearch">
+              	<div class="search"><input data-id="cmsearch" type="text" placeholder="Find" /></div>
+              	<ul class="editorsearchcontrol">
+                	<li class="matches" data-id="matches">0 matches</li>
+                	<li data-id="matchcase">M</li>
+                	<li data-id="regx">R</li>
+                	<li data-id="matchnext">N</li>
+                	<li data-id="matchprev">P</li>
+                	<li class="close fa fa-close" data-action='{"id":"data","which":"[data-lower-upper]","with":"hidden"}'></li>
+              	</ul>
+            </div>
+            <ul class="lower tmenu" id="fileproperties">
+			  	<li class="filestatus" data-id="filestatus"><div><span class="close fa fa-close" data-action='{"id":"data","which":"[data-lower-lower]","with":"hidden"}'></span><span>Line <code>0</code></span>,<span> Column <code>0</code></span></div></li>
+            </ul>
+        </div>
+    </div>
+</div>

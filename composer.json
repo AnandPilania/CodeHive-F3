@@ -1,0 +1,33 @@
+{
+    "name": "anandpilania/codehive-f3",
+    "description": "CodeHive made with FatFree PHP Framework.",
+	"keywords": ["framework", "fatfree", "f3", "fatfree-framework", "anandpilania", "codehive", "f3-composer", "fatfree-composer"],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anand Pilania",
+            "email": "pilaniaanand@gmail.com"
+        }
+    ],
+    "require": {
+		"bcosca/fatfree-core": "^3.6",
+        "ikkez/f3-fal": "^0.7.2",
+        "ikkez/f3-flash": "^1.0",
+        "ikkez/f3-assets": "^1.0",
+        "ikkez/f3-mailer": "^1.0",
+		"ikkez/f3-cortex": "^1.5",
+		"ikkez/f3-middleware": "^1.1",
+        "ikkez/f3-opauth": "dev-master",
+        "ikkez/f3-events": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app/"
+		},
+		"files": [
+			"bootstrap/helpers.php"
+		]
+	},
+	"minimum-stability": "stable"
+}

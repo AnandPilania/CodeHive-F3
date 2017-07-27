@@ -1,0 +1,51 @@
+.bar.chat{position:fixed;left:0px;right:0px;bottom:0px;z-index:9999;}
+[data-bottomBar="shown"] .bar.chat{bottom:25px;}
+.dark .bar.chat,.dark .bar.chat .chatbox{background-color:#333333;color:#959798;border-top:1px solid #1d1d1d;}
+.light .bar.chat,.light .bar.chat .chatbox{background-color:#fefefe;color:#333333;border-top:1px solid #aaaaaa;}
+[data-chatBar="shown"] .bar.chat{display:block;}
+[data-chatBar="shown"] #main{bottom:25px;}
+[data-chatBar="shown"][data-bottomBar="shown"] #main{bottom:50px}
+
+.bar.chat .outer{width:100%;height:100%;position:relative;}
+.bar.chat ul{position:absolute;right:0;bottom:0;z-index:9999;}
+.chatbox{display:inline-block;position:relative;vertical-align:bottom;width:250px;height:300px;margin-right:5px;box-shadow:0px 0px 3px #1d1d1d;}
+.chatbox .outer{border:1px solid #111111;border-bottom:none;}
+.chatbox .header{background-color:#1d1d1d;height:25px;width:100%;cursor:default;border:none;}
+.chatbox .header .status{width:6px;height:6px;margin:8.4px 8px;float:left;border-radius:50%;}
+.chatbox .header .info{float:left;height:100%;width:173px;overflow:hidden;}
+.chatbox .header .info .name{line-height:13px;height:13px;}
+.chatbox .header .info .till{float:left;line-height:9px;height:9px;font-size:9px;font-style:italic;}
+.chatbox .header .options{width:51px;height:100%;float:right;border-left:1px solid #111111;}
+.chatbox .header .options span{float:left;width:25px;height:25px;line-height:25px;text-align:center;}
+.chatbox .middle{height:233px;width:100%;border-top:1px solid #111111;border-bottom:1px solid #111111;}
+.chatbox .footer{width:100%;height:40px;}
+.chatbox .footer .textarea{width:100%;height:100%;position:relative;}
+.chatbox .footer textarea{background:#1d1d1d;border:none;color:#aaaaaa;height:40px;width:100%;overflow:hidden;resize:none;padding:3px;line-height:15px;}
+.chatbox.min{width:150px;height:25px;}
+.chatbox.min .outer{border-color:#1d1d1d;}
+.chatbox.min .header{background:#1d1d1d;}
+.chatbox.min .header .status{margin:8.4px 4.2px;}
+.chatbox.min .header .info{width:133px;}
+.chatbox.min .header .info .name{line-height:21px;height:21px;padding-left:5px;}
+.chatbox.min .header .info .till{display:none;}
+.chatbox.min .header:hover > .info{width:81px;}
+.chatbox.min .header:hover > .info .name{line-height:13px;height:13px;padding-left:0px;}
+.chatbox.min .header:hover > .info .till{display:block;}
+.chatbox.min .header .options{display:none;}
+.chatbox.min .header:hover > .options{display:block;}
+
+.chatbox.minimizedChatbox{width:25px;height:25px;line-height:25px;text-align:center;background:#111111!important;cursor:default;}
+.chatbox.minimizedChatbox .inner{position:absolute;bottom:100%;right:0px;height:auto;min-width:100px;max-width:150px;background:#111111;display:none;}
+.chatbox.minimizedChatbox.active .inner{display:block;}
+.chatbox.minimizedChatbox .inner div{height:25px;line-height:25px;overflow:hidden;padding:0 5px;position:relative;}
+.chatbox.minimizedChatbox h4{width:100%;text-align:center;}
+.chatbox.minimizedChatbox span{background-color:#000000;display:none;position:absolute;top:0;right:0;height:25px;width:25px;line-height:25px;text-align:center;}
+.chatbox.minimizedChatbox .inner div:hover > span{display:block;}
+
+.chatbox .middle .outer{border:none;}
+.chatbox .middle .loader{width:100%;text-align:center;padding:5px 0;}
+.chatbox .middle .at{}
+.chatbox .middle .message{width:80%;vertical-align:bottom;position:relative;}
+.chatbox .middle .message.default{width:100%;text-align:center;border:1px dashed #1d1d1d;}
+.chatbox .middle .message.sent{float:right;}
+.chatbox .middle .message.received{float:left;}

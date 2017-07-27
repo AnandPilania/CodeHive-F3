@@ -1,0 +1,1 @@
+ch.friendsList=(function(){})();
