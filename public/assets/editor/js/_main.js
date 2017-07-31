@@ -20,7 +20,10 @@ ch.search=function(inputEle, fromEle, exactEle) {
 	});
 };
 ch.store=(function(){
-	
+	return {
+		add: function() {},
+		remove: function() {}
+	};
 })();
 ch.init=(function(){
 	$('html').on('click','[data-action]',function(_z){

@@ -4,7 +4,7 @@
 <div id="fileTree" class="fileTree">
 	<ul>
 	<repeat group="{{ @fileTree }}" key="{{ @key}}" value="{{ @value }}">
-		<li><h4>{{ @key }}</h4></li>
+		<li data-type="{{ @value['type'] }}" style="background-image:url(/assets/img/fileTree/{{ @value['type'] !== 'dir' ? @value['extension'] : @value['type'] }}.png)"><h4>{{ @key }}</h4></li>
 	</repeat>
 	</ul>
 </div>
