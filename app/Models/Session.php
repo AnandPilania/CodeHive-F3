@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace Models;
 
+use Model;
 use DB\SQL\Schema;
 
 class Session extends \DB\Cortex {
@@ -23,7 +24,7 @@ class Session extends \DB\Cortex {
 			'type' => Schema::DT_VARCHAR128
 			),
 		'desktop' => array(
-			'has-one' => array('App\Models\Desktop', 'session_id')
+			'has-one' => array('Models\Desktop', 'session_id')
 			)
 		);
 }

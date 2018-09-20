@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Models;
+namespace Models;
 
+use Model;
 use DB\SQL\Schema;
 
 class Profile extends Model {
 	protected $table = 'profile',
 	$fields = array(
 		'uid' => array(
-			'belongs-to-one' => 'App\Models\User'
+			'belongs-to-one' => 'Models\User'
 			),
 		'username' => array(
 			'type' => Schema::DT_VARCHAR128,

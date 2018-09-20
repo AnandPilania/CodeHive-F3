@@ -1,9 +1,9 @@
 <?php
+namespace Controllers;
 
-namespace App\Controllers;
-
+use Controller;
 use FAL\LocalFS;
-use App\Models\Desktop;
+use Models\FS;
 
 class DesktopController extends Controller {
 	protected $model;
@@ -11,11 +11,11 @@ class DesktopController extends Controller {
 
 	public function __construct() {
 		parent::__construct();
-		$this->model = new Desktop();
+		$this->model = new FS();
 		$this->fs = new LocalFS($this->model->getPath());
 	}
 
 	public function getIndex() {
-		template('desktop', ['desktopItems' => array_merge($this->fs->listDir(), $this->fs->listDir('/../default/'))]);
+		view('desktop', ['desktopItems' => array_merge($this->fs->listDir(), $this->fs->listDir('/../default/'))]);
 	}
 }

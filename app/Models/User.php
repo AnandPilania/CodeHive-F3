@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace Models;
 
+use Model;
 use Bcrypt;
 use DB\SQL\Schema;
 
@@ -34,7 +35,7 @@ class User extends Model {
 			'default' => false
 			),
 		'desktop' => array(
-			'has-one' => array('App\Models\Desktop', 'session_id')
+			'has-one' => array('Models\Desktop', 'session_id')
 			)
 		);
 

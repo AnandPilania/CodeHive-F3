@@ -1,7 +1,0 @@
-<repeat group="{{ Flash::instance()->getMessages() }}" value="{{ @msg }}">
-<div class="alert">
-	<ul>
-		<li class="{{ @msg.status }}">{{ @msg.text | esc }}</li>
-	</ul>
-</div>
-</repeat>

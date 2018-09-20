@@ -1,0 +1,10 @@
+<link href="/assets/css/flash.css" priority="1" rel="stylesheet" type="text/css" />
+<script src="/assets/js/flash.js" priority="1" group="footer" type="text/javascript"></script>
+
+<repeat group="{{ Flash::instance()->getMessages() }}" value="{{ @msg }}">
+    <div class="alert">
+        <ul>
+            <li class="{{ @msg.status }}">{{ @msg.text | esc }}</li>
+        </ul>
+    </div>
+</repeat>

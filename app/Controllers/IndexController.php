@@ -1,12 +1,14 @@
 <?php
+namespace Controllers;
 
-namespace App\Controllers;
+use Controller;
+
 class IndexController extends Controller {
 	public function getIndex() {
-		template('index');
+		view('index');
 	}
 
 	public function getApiIndex() {
-		echo json_encode(['success' => true]);
+		json(['success' => true]);
 	}
 }

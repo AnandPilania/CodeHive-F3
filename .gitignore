@@ -2,3 +2,4 @@
 /public/compressed
 /storage/*
 /vendor
+/.idea

@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace Models;
 
+use Model;
 use DB\SQL\Schema;
 
 class FS extends Model {
@@ -9,11 +10,11 @@ class FS extends Model {
 
 	public function __construct() {
 		$this->user = user();
-		$this->fields = array_merge(array('session_id' => array('belongs-to-one' => ($user?'App\Models\User':'App\Models\Session'))), $this->fields);
+		$this->fields = array_merge(array('session_id' => array('belongs-to-one' => ($user?'Models\User':'Models\Session'))), $this->fields);
 		parent::__construct();
 
 		$this->id = $this->user?:(new Session())->load(array('ip = ? AND agent = ?', $this->app->IP, $this->app->AGENT))->last()->_id;
-		$this->path = root_path('/storage/root/'.$this->id);
+		$this->path = base_path('/storage/root/'.$this->id);
 		if($this->load(array('session_id = ?', $this->id))->dry()) {
 			$this->newSession($this->id);
 		}else{

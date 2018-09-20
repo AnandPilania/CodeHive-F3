@@ -1,9 +1,9 @@
 <?php
+namespace Controllers;
 
-namespace App\Controllers;
-
+use Controller;
 use FAL\LocalFS;
-use App\Models\FS;
+use Models\FS;
 
 class EditorController extends Controller {
 	protected $model;
@@ -16,6 +16,6 @@ class EditorController extends Controller {
 	}
 
 	public function getIndex() {
-		template('editor', ['fileTree' => array_merge($this->fs->listDir(null, null, true), $this->fs->listDir('/../default/', null, true)), 'projects' => true]);
+		view('editor', ['fileTree' => array_merge($this->fs->listDir(null, null, true), $this->fs->listDir('/../default/', null, true)), 'projects' => true]);
 	}
 }

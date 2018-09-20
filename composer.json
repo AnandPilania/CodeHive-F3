@@ -19,15 +19,16 @@
 		"ikkez/f3-cortex": "^1.5",
 		"ikkez/f3-middleware": "^1.1",
         "ikkez/f3-opauth": "dev-master",
-        "ikkez/f3-events": "dev-master"
+        "ikkez/f3-events": "dev-master",
+        "anandpilania/f3-validator": "^1.2",
+        "firebase/php-jwt": "^5.0"
 	},
+    "require-dev": {
+        "rafamds/f3-falsum": "^2.6"
+    },
 	"autoload": {
-		"psr-4": {
-			"App\\": "app/"
-		},
-		"files": [
-			"bootstrap/helpers.php"
-		]
+		"classmap": ["helpers/"]
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "stable",
+	"prefer-stable": true
 }

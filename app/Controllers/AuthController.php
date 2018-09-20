@@ -1,6 +1,7 @@
 <?php
+namespace Controllers;
 
-namespace App\Controllers;
+use Controller;
 
 class AuthController extends Controller {
 	public function getRegister() {}
@@ -8,7 +9,7 @@ class AuthController extends Controller {
 	public function postRegister() {}
 
 	public function getLogin() {
-		template('auth\login')
+		view('auth\login');
 	}
 
 	public function postLogin() {}

@@ -1,5 +1,6 @@
 <?php
+namespace Controllers;
 
-namespace App\Controllers;
+use Controller;
 
 class DirectoryController extends Controller {}

@@ -1,23 +1,66 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca80953c7720178200ad6de3d3d3573f",
+    "content-hash": "e36e907471d9a7863fee45ebe7d2b67b",
     "packages": [
         {
-            "name": "bcosca/fatfree-core",
-            "version": "3.6.2",
+            "name": "anandpilania/f3-validator",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bcosca/fatfree-core.git",
-                "reference": "ded2875b61e69e980d04346ca9b42350ffad8d70"
+                "url": "https://github.com/AnandPilania/f3-validator.git",
+                "reference": "b3942939071845cee678cf5414a87ba59a4c318c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bcosca/fatfree-core/zipball/ded2875b61e69e980d04346ca9b42350ffad8d70",
-                "reference": "ded2875b61e69e980d04346ca9b42350ffad8d70",
+                "url": "https://api.github.com/repos/AnandPilania/f3-validator/zipball/b3942939071845cee678cf5414a87ba59a4c318c",
+                "reference": "b3942939071845cee678cf5414a87ba59a4c318c",
+                "shasum": ""
+            },
+            "require": {
+                "bcosca/fatfree-core": "^3.6"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anand Pilania",
+                    "email": "pilaniaanand@gmail.com"
+                }
+            ],
+            "description": "Validator package for FatFreeFramework.",
+            "keywords": [
+                "F3",
+                "anandpilania",
+                "f3-validator",
+                "fatfree",
+                "fatfreeframework"
+            ],
+            "time": "2018-09-01T12:20:24+00:00"
+        },
+        {
+            "name": "bcosca/fatfree-core",
+            "version": "3.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bcosca/fatfree-core.git",
+                "reference": "4d1a08829b14468c4821c03b9a5f3b6e4bc981e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bcosca/fatfree-core/zipball/4d1a08829b14468c4821c03b9a5f3b6e4bc981e5",
+                "reference": "4d1a08829b14468c4821c03b9a5f3b6e4bc981e5",
                 "shasum": ""
             },
             "require": {
@@ -35,20 +78,66 @@
             ],
             "description": "A powerful yet easy-to-use PHP micro-framework designed to help you build dynamic and robust Web applications - fast!",
             "homepage": "http://fatfreeframework.com/",
-            "time": "2017-06-26T10:03:43+00:00"
+            "time": "2018-04-19T17:35:23+00:00"
         },
         {
-            "name": "ikkez/f3-assets",
-            "version": "v1.0.0",
+            "name": "firebase/php-jwt",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ikkez/f3-assets.git",
-                "reference": "5973049f8b96a3d3811544fef4853eabf6999c72"
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ikkez/f3-assets/zipball/5973049f8b96a3d3811544fef4853eabf6999c72",
-                "reference": "5973049f8b96a3d3811544fef4853eabf6999c72",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": " 4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "time": "2017-06-27T22:17:23+00:00"
+        },
+        {
+            "name": "ikkez/f3-assets",
+            "version": "v1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ikkez/f3-assets.git",
+                "reference": "99fc507b365a166e9a9e4ba2e3da0621d290d346"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ikkez/f3-assets/zipball/99fc507b365a166e9a9e4ba2e3da0621d290d346",
+                "reference": "99fc507b365a166e9a9e4ba2e3da0621d290d346",
                 "shasum": ""
             },
             "type": "library",
@@ -70,20 +159,20 @@
                 "fatfree",
                 "minify"
             ],
-            "time": "2016-11-08T08:51:06+00:00"
+            "time": "2018-08-21T10:24:47+00:00"
         },
         {
             "name": "ikkez/f3-cortex",
-            "version": "v1.5.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ikkez/f3-cortex.git",
-                "reference": "2cd1712eeae33c9d05716e8a1d8e3796f0ea4016"
+                "reference": "c5a481070271b31fb5b4537b18fee9fc28cbcd88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ikkez/f3-cortex/zipball/2cd1712eeae33c9d05716e8a1d8e3796f0ea4016",
-                "reference": "2cd1712eeae33c9d05716e8a1d8e3796f0ea4016",
+                "url": "https://api.github.com/repos/ikkez/f3-cortex/zipball/c5a481070271b31fb5b4537b18fee9fc28cbcd88",
+                "reference": "c5a481070271b31fb5b4537b18fee9fc28cbcd88",
                 "shasum": ""
             },
             "require": {
@@ -108,7 +197,7 @@
                 "orm",
                 "sql"
             ],
-            "time": "2017-06-30T13:23:09+00:00"
+            "time": "2018-04-25T10:51:45+00:00"
         },
         {
             "name": "ikkez/f3-events",
@@ -144,7 +233,7 @@
                 "event",
                 "fatfree"
             ],
-            "time": "2017-03-27 09:54:13"
+            "time": "2017-03-27T09:54:13+00:00"
         },
         {
             "name": "ikkez/f3-fal",
@@ -219,16 +308,16 @@
         },
         {
             "name": "ikkez/f3-mailer",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ikkez/f3-mailer.git",
-                "reference": "198d34d6cc4d0abc1848f73b93c70e5eff431bf7"
+                "reference": "96101725bd30ee147308d03bf1dd7b6f70894d2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ikkez/f3-mailer/zipball/198d34d6cc4d0abc1848f73b93c70e5eff431bf7",
-                "reference": "198d34d6cc4d0abc1848f73b93c70e5eff431bf7",
+                "url": "https://api.github.com/repos/ikkez/f3-mailer/zipball/96101725bd30ee147308d03bf1dd7b6f70894d2f",
+                "reference": "96101725bd30ee147308d03bf1dd7b6f70894d2f",
                 "shasum": ""
             },
             "type": "library",
@@ -250,7 +339,7 @@
                 "mail",
                 "smtp"
             ],
-            "time": "2017-04-25T19:57:43+00:00"
+            "time": "2018-01-10T11:52:58+00:00"
         },
         {
             "name": "ikkez/f3-middleware",
@@ -292,12 +381,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ikkez/f3-opauth.git",
-                "reference": "85b541da8b75d1e1d97d672b4627884d9c52ec83"
+                "reference": "67ebf5dbb5ee702ab0c61e32192b0a06fcdd1fa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ikkez/f3-opauth/zipball/85b541da8b75d1e1d97d672b4627884d9c52ec83",
-                "reference": "85b541da8b75d1e1d97d672b4627884d9c52ec83",
+                "url": "https://api.github.com/repos/ikkez/f3-opauth/zipball/67ebf5dbb5ee702ab0c61e32192b0a06fcdd1fa3",
+                "reference": "67ebf5dbb5ee702ab0c61e32192b0a06fcdd1fa3",
                 "shasum": ""
             },
             "type": "library",
@@ -320,20 +409,20 @@
                 "fatfree",
                 "oauth"
             ],
-            "time": "2017-02-16 23:23:23"
+            "time": "2018-08-26T20:42:07+00:00"
         },
         {
             "name": "ikkez/f3-schema-builder",
-            "version": "v2.2.1",
+            "version": "v2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ikkez/f3-schema-builder.git",
-                "reference": "9c15676247e6f85a28c9f5db126b9030cdc5dc05"
+                "reference": "42d8f3f0a117dce29ab3fe30ef46fafb419224e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ikkez/f3-schema-builder/zipball/9c15676247e6f85a28c9f5db126b9030cdc5dc05",
-                "reference": "9c15676247e6f85a28c9f5db126b9030cdc5dc05",
+                "url": "https://api.github.com/repos/ikkez/f3-schema-builder/zipball/42d8f3f0a117dce29ab3fe30ef46fafb419224e3",
+                "reference": "42d8f3f0a117dce29ab3fe30ef46fafb419224e3",
                 "shasum": ""
             },
             "type": "library",
@@ -353,10 +442,61 @@
                 "fatfree",
                 "sql"
             ],
-            "time": "2017-04-25T20:19:11+00:00"
+            "time": "2018-05-15T13:03:21+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "rafamds/f3-falsum",
+            "version": "v2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rafamds/f3-falsum.git",
+                "reference": "630b749fd0d436340a87eaeeea86f8644ab8f4de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rafamds/f3-falsum/zipball/630b749fd0d436340a87eaeeea86f8644ab8f4de",
+                "reference": "630b749fd0d436340a87eaeeea86f8644ab8f4de",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Falsum\\": "src/Falsum/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Morais dos Santos",
+                    "homepage": "https://ra.fael.ml",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Pretty error handling for Fat-Free Framework",
+            "homepage": "https://github.com/rooftoprafa/f3-falsum",
+            "keywords": [
+                "F3",
+                "error",
+                "exception",
+                "falsum",
+                "fat-free framework",
+                "handling",
+                "library"
+            ],
+            "time": "2017-01-30T13:35:08+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
